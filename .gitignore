@@ -2,6 +2,10 @@
 *.log
 *.tmp
 
+# Archivos de MySQL Workbench
+*.mwb
+
 # Archivos del sistema
 .DS_Store
 Thumbs.db
+    

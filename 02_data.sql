@@ -69,7 +69,7 @@ SHOW VARIABLES LIKE 'local_infile';
 -- 2.1 Cargar productos
 -- ----------------------------------------------------------------------------
 -- MODIFICAR ESTA RUTA según dónde descargaste el proyecto
-LOAD DATA LOCAL INFILE 'D:/DataScience/Proyecto-2-SQL/products.csv'
+LOAD DATA LOCAL INFILE 'D:/DataScience/Proyecto-2-SQL/CSVs/products.csv'
 INTO TABLE temp_products
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
@@ -81,7 +81,7 @@ IGNORE 1 ROWS
 -- 2.2 Cargar ventas
 -- ----------------------------------------------------------------------------
 -- MODIFICAR ESTA RUTA según dónde descargaste el proyecto
-LOAD DATA LOCAL INFILE 'D:/DataScience/Proyecto-2-SQL/sales.csv'
+LOAD DATA LOCAL INFILE 'D:/DataScience/Proyecto-2-SQL/CSVs/sales.csv'
 INTO TABLE temp_sales
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
@@ -93,7 +93,7 @@ IGNORE 1 ROWS
 -- 2.3 Cargar precios mayoristas
 -- ----------------------------------------------------------------------------
 -- MODIFICAR ESTA RUTA según dónde descargaste el proyecto
-LOAD DATA LOCAL INFILE 'D:/DataScience/Proyecto-2-SQL/bulk_prices.csv'
+LOAD DATA LOCAL INFILE 'D:/DataScience/Proyecto-2-SQL/CSVs/bulk_prices.csv'
 INTO TABLE temp_prices
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
@@ -105,7 +105,7 @@ IGNORE 1 ROWS
 -- 2.4 Cargar tasas de pérdida
 -- ----------------------------------------------------------------------------
 -- MODIFICAR ESTA RUTA según dónde descargaste el proyecto
-LOAD DATA LOCAL INFILE 'D:/DataScience/Proyecto-2-SQL/product_loss_rate.csv'
+LOAD DATA LOCAL INFILE 'D:/DataScience/Proyecto-2-SQL/CSVs/product_loss_rate.csv'
 INTO TABLE temp_losses
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
