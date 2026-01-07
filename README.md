@@ -38,6 +38,8 @@ Carga datos desde CSV con:
 - CAST y TRIM para transformación
 - Transacciones (START TRANSACTION, COMMIT, ROLLBACK)
 
+**IMPORTANTE**: Antes de ejecutar este archivo, modifica las rutas de los archivos CSV en las líneas 72, 84, 96 y 108 según la ubicación donde descargaste el proyecto.
+
 ## 03_eda.sql - Análisis Exploratorio (15 Consultas)
 
 ### 1. Ventas por Categoría
