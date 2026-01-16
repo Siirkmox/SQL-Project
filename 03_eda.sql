@@ -482,7 +482,9 @@ LIMIT 15;
 SELECT
     p.item_name AS producto,
     c.category_name AS categoria,
-    COUNT(fv.sale_id) AS ventas_totales
+    COUNT(fv.sale_id) AS ventas_totales,
+    MONTH(CURRENT_DATE) AS mes_sin_ventas,
+    MONTHNAME(CURRENT_DATE) AS nombre_mes_sin_ventas
 FROM dim_productos p
     INNER JOIN dim_categorias c ON p.category_id = c.category_id
     LEFT JOIN fact_ventas fv ON p.product_id = fv.product_id AND fv.is_return = FALSE
