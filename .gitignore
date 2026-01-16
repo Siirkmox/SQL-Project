@@ -8,4 +8,7 @@
 # Archivos del sistema
 .DS_Store
 Thumbs.db
-    Presentación.mp4
+Presentación.mp4
+
+# Carpeta Claude
+.claude/
